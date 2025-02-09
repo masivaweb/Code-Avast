@@ -34,8 +34,28 @@
     <div class="container">
         <h1>¡Aquí está tu Código de Activación!</h1>
         <p>Usa el siguiente código para activar Avast Ultimate:</p>
-        <div class="code">Y7U747-F6X4B2-4FUFKA</div>
+        <div id="code" class="code"></div>
         <p>¡Gracias por completar la oferta!</p>
     </div>
+
+    <script>
+        // Lista de códigos de activación
+        const codes = [
+            "Y7U747-F6X4B2-4FUFKA",
+            "FDH9D3-VZH4PJ-4GCERA",
+            "34WG6U-RVFDQJ-4AUGYS",
+            "DP5Z6B-2MVZCJ-4YCFBA",
+            "ZG82E9-77TRCJ-5WLFKW",
+            "DWNS8T-82VDLJ-5UUF7E",
+            "22BY4W-EUA5FJ-4BCGNN",
+            "5DGX2P-SYZ5E2-43UGL2",
+            "WMPR39-RTSYG2-5YCFLS",
+            "AAGHFZ-E7CGEJ-4ALG36"
+        ];
+
+        // Selección del código actual (alternancia infinita)
+        const codeIndex = Math.floor(Math.random() * codes.length);
+        document.getElementById("code").innerText = codes[codeIndex];
+    </script>
 </body>
 </html>
